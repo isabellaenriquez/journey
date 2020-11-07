@@ -19,10 +19,8 @@ function DiaryEntry(props){
             <h2 className="date">{props.day + " " + getMonthName(props.month) + " " + props.year}</h2>
             <h3 className="entry">Your Diary Entry: </h3>
             <p className="entryText">{props.entry}</p>
-            <h3 className="score">Today's Mood: </h3>
-            <p className="scoreText">{props.mood}</p>
-            <h3 className="magnitude">Today's Magnitude:</h3>
-            <p className="magnitudeText">{props.magnitude}</p>
+            <h3 className="score">Today's Mood: {props.mood}</h3>
+            <h3 className="magnitude">Today's Magnitude: {props.magnitude}</h3>
         </div>
     );
 }
