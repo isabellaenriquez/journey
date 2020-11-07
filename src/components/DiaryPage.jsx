@@ -2,8 +2,9 @@ import React, { useState, useRef } from 'react';
 import './DiaryPage.css';
 import firebase from './Firebase.js';
 
-function DiaryPage(props){
+const axios = require('axios');
 
+function DiaryPage(props){
     const date = "November 7th";
     const entry = useRef("");
 
@@ -19,6 +20,17 @@ function DiaryPage(props){
             magnitude: 1,
             mood: 1
         });
+
+        axios.post("/api/sendEntry", {
+            text: entry.current.value
+        })
+        .then((response) => {
+            console.log(response.data);
+            props.updateEntries(response.data);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
     };
 
     return (

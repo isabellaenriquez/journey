@@ -1,0 +1,17 @@
+{
+  "name": "journey-backend",
+  "version": "1.0.0",
+  "description": "Backend for communication with the google cloud apis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/language": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1"
+  }
+}
