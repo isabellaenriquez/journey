@@ -5,11 +5,13 @@ import firebase from './Firebase.js';
 const axios = require('axios');
 
 function DiaryPage(props){
-    const date = "November 7th";
     const entry = useRef("");
+    const date = useRef("");
 
     function addEntry(event) {
         console.log(entry.current.value);
+
+        const dateObj = new Date(date.current.value);
 
         const db = firebase.firestore();
 
@@ -23,11 +25,14 @@ function DiaryPage(props){
         .then((response) => {
             console.log(response.data);
             const data = {
+                day: dateObj.getDate(),
+                month: dateObj.getMonth() + 1,
+                year: dateObj.getFullYear(),
                 entry: entry.current.value,
                 magnitude: response.data.documentSentiment.magnitude,
                 mood: response.data.documentSentiment.score
             };
-            const userRef = db.collection("users").doc(date).set(data);
+            const userRef = db.collection("users").doc(date.current.value).set(data);
             props.onNewEntry(data);
         })
         .catch((error) => {
@@ -38,7 +43,7 @@ function DiaryPage(props){
     return (
         <div className="DiaryPage">
             <header className="title">How you feeling?</header>
-            <p className="date">{date}</p>
+            <input type="date" ref={date}></input>
             <textarea className="entry" ref={entry} placeholder="Placeholder" />
             <button className="addButton" onClick={addEntry}>Add Entry</button>
         </div>
