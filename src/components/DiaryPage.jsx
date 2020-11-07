@@ -10,15 +10,11 @@ function DiaryPage(props){
 
     function addEntry(event) {
         console.log(entry.current.value);
+
         const db = firebase.firestore();
+
         db.settings({
             timestampInSnapshots: true
-        });
-        const userRef = db.collection("users").doc(date).set({
-            date: "November 7th",
-            entry: entry.current.value,
-            magnitude: 1,
-            mood: 1
         });
 
         axios.post("/api/sendEntry", {
@@ -26,7 +22,11 @@ function DiaryPage(props){
         })
         .then((response) => {
             console.log(response.data);
-            props.updateEntries(response.data);
+            const userRef = db.collection("users").doc(date).set({
+                entry: entry.current.value,
+                magnitude: response.data.documentSentiment.magnitude,
+                mood: response.data.documentSentiment.score
+            });
         })
         .catch((error) => {
             console.log(error);
