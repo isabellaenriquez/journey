@@ -70,7 +70,7 @@ function Suggestions(props) {
 
     useEffect(() => {
         setResources(tailorResources(props.score)); // tailor resources depending on average mood
-    })
+    }, [props.score]);
 
 
     return (

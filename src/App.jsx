@@ -26,6 +26,9 @@ function App() {
       console.log(response);
       setEntries(response);
     })
+    .catch((error) => {
+      console.log(error);
+    })
   }, [db])
 
   return (
