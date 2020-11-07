@@ -1,18 +1,29 @@
 .Tip{
     background-color: #B69BB7;
     border-radius: 50px;
-    padding: 10px;
-    margin: 10px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.Tip img{
+    height: 10em;
+    float: right;
+}
+
+table{
+    margin: 0;
+    width: 100%;
 }
 
 .Suggestions{
     margin: 20px;
     color: white;
+    display: inline;
 }
 
 .Resources{
-    padding: 10px;
-    margin: 10px;
+    padding: 50px;
+    margin: 20px;
     background-color: #B69BB7;
     border-radius: 50px;
 }
