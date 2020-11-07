@@ -1,0 +1,18 @@
+.Tip{
+    background-color: #B69BB7;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Suggestions{
+    margin: 20px;
+    color: white;
+}
+
+.Resources{
+    padding: 10px;
+    margin: 10px;
+    background-color: #B69BB7;
+    border-radius: 50px;
+}
