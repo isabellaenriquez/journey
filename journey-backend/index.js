@@ -13,6 +13,7 @@ app.post('/api/sendEntry', async function (req, res) {
     }
 
     const [result] = await client.analyzeSentiment({document: document});
+    result.text = text;
     res.json(result);
 })
 
