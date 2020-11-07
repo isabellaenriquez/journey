@@ -1,0 +1,23 @@
+.DiaryEntry {
+    border-style: solid;
+    display: inline-block;
+    max-height: 30vh;
+    width: 40vw;
+    float: right;
+}
+
+h1, h2, h3, p {
+    text-align: left;
+    padding-left: 20px;
+    margin: 2px 0px 2px 0px;
+    padding-bottom: 0px;
+    font-size: 2vh;
+}
+
+.date {
+    font-size: 35px;
+}
+
+.entryText {
+    font-size: 15px;
+}
