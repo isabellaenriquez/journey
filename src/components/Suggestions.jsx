@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Suggestions.css';
 import { tips } from './tips.json';
 import { resources, crisis } from './resources.json';
@@ -66,7 +66,12 @@ function Suggestions(props) {
         return list;
     }
 
-    const resourceList = tailorResources(-0.1); // tailor resources depending on average mood
+    const [resourceList, setResources] = useState("");
+
+    useEffect(() => {
+        setResources(tailorResources(props.score)); // tailor resources depending on average mood
+    })
+
 
     return (
         <div className="Suggestions">
@@ -76,7 +81,7 @@ function Suggestions(props) {
                         <td>
                 <h1>Tip</h1>
                             <p>{pickTip()}</p></td>
-                        <td><img src="https://cdn1.iconfinder.com/data/icons/light-bulb-emoticons/512/Happy-Emoji-Emotion-Face-Expression-Feeling_1-512.png"></img>
+                        <td><img src="https://cdn1.iconfinder.com/data/icons/light-bulb-emoticons/512/Happy-Emoji-Emotion-Face-Expression-Feeling_1-512.png" alt=""></img>
                         </td>
                     </tr>
                 </table>

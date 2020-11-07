@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import './DiaryPage.css';
 import firebase from './Firebase.js';
 
@@ -25,7 +25,7 @@ function DiaryPage(props){
         .then((response) => {
             console.log(response.data);
             const data = {
-                day: dateObj.getDate(),
+                day: dateObj.getDate() + 1,
                 month: dateObj.getMonth() + 1,
                 year: dateObj.getFullYear(),
                 entry: entry.current.value,
