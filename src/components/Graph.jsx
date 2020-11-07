@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js';
 import './Graph.css';
-import colour from '../ColourConversion.js';
+import { convertToColour } from '../ColourConversion.js';
 
 function Graph(props){
     const graphRef = useRef(null);
@@ -25,7 +25,7 @@ function Graph(props){
         options: {
             title: {
                 display: true,
-                text: "Mood over time"
+                text: "Mood this month"
             },
             legend: {
                 display: false
@@ -34,7 +34,7 @@ function Graph(props){
                 xAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: "Time"
+                        labelString: "Day"
                     },
                     ticks: {
                         min: 0
@@ -57,7 +57,7 @@ function Graph(props){
         }
         if (graphContent.current !== null) {
             graphConfig.data.datasets[0].data = props.entries.map((entry, index) => ({x: index, y: entry.score}));
-            graphConfig.data.datasets[0].pointBackgroundColor = props.entries.map((entry) => (colour.convertToColour(entry.score)));
+            graphConfig.data.datasets[0].pointBackgroundColor = props.entries.map((entry) => (convertToColour(entry.score)));
             graphContent.current.update();
         }
         prevGraphRef.current = graphRef;
