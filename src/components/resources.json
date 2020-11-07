@@ -1,0 +1,50 @@
+{
+    "resources": [
+        {
+            "name": "Kids Help Phone",
+            "description": "24/7 hotline for youth and adults alike.",
+            "web": "https://kidshelpphone.ca/live-chat/",
+            "text": "\"CONNECT\" to 686868."
+        },
+        {
+            "name": "Youthspace.ca",
+            "description": "Hotline dedicated to Canadian youth. Includes suicide prevention, education, and support. Active from 6pm to 12am PT.",
+            "web": "www.youthspace.ca",
+            "text": "(778)-783-0177."
+        },
+        {
+            "name": "Better Help",
+            "description": "Online access to professional counsellors.",
+            "web": "www.betterhelp.ca"
+        },
+        {
+            "name": "The Lifeline App",
+            "description": "Direct access to phone, online chat, text, and email crisis support, including e-counselling, self-management tools, and access to crisis centres across Canada.",
+            "web": "www.thelifelinecanada.ca"
+        },
+        {
+            "name": "Big White Wall Canada",
+            "description": "Anonymous peer support community accessible anytime, anywhere.",
+            "web": "www.bigwhitewall.ca"
+        },
+        {
+            "name": "Canadian Mental Health Association",
+            "description": "National mental health organization.",
+            "web": "https://cmha.ca/"
+        }
+    ],
+
+    "crisis": [
+        {
+            "name": "Crisis Services Canada",
+            "description": "National crisis hotline. Phone hotline available 24/7, text support available 4pm to 12am ET.",
+            "phone": "1-(833)-456-4566.",
+            "text": "45645."
+        },
+        {
+            "name": "Canadian Crisis Hotline",
+            "description": "National phone crisis hotline.",
+            "phone": "1-(888)-353-2273."
+        }
+    ]
+}
