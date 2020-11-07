@@ -56,8 +56,8 @@ function Graph(props){
             console.log(graphContent.current);
         }
         if (graphContent.current !== null) {
-            graphConfig.data.datasets[0].data = props.entries.map((entry, index) => ({x: index, y: entry.score}));
-            graphConfig.data.datasets[0].pointBackgroundColor = props.entries.map((entry) => (convertToColour(entry.score)));
+            graphConfig.data.datasets[0].data = props.entries.map((entry, index) => ({x: index, y: entry.mood}));
+            graphConfig.data.datasets[0].pointBackgroundColor = props.entries.map((entry) => (convertToColour(entry.mood)));
             graphContent.current.update();
         }
         prevGraphRef.current = graphRef;

@@ -22,11 +22,13 @@ function DiaryPage(props){
         })
         .then((response) => {
             console.log(response.data);
-            const userRef = db.collection("users").doc(date).set({
+            const data = {
                 entry: entry.current.value,
                 magnitude: response.data.documentSentiment.magnitude,
                 mood: response.data.documentSentiment.score
-            });
+            };
+            const userRef = db.collection("users").doc(date).set(data);
+            props.onNewEntry(data);
         })
         .catch((error) => {
             console.log(error);
