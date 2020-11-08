@@ -62,7 +62,7 @@ function Graph(props){
         }
         if (graphContent.current !== null) {
             graphConfig.data.datasets[0].data = props.entries.filter((entry) => entry.month === new Date().getMonth() + 1).map((entry) => ({x: entry.day, y: entry.mood}));
-            graphConfig.data.datasets[0].pointBackgroundColor = props.entries.map((entry) => (convertToColour(entry.mood)));
+            graphConfig.data.datasets[0].pointBackgroundColor = props.entries.filter((entry) => entry.month === new Date().getMonth() + 1).map((entry) => (convertToColour(entry.mood)));
             graphContent.current.update();
         }
         prevGraphRef.current = graphRef;
