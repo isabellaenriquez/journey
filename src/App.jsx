@@ -57,7 +57,7 @@ function App() {
           <div className="left-side-content">
             <DiaryPage onNewEntry={updateEntries}></DiaryPage>
             <Graph entries={entries}></Graph>
-            {(entries.length > 0) &&
+            { (entries.length > 0) &&
               <Suggestions score={entries[0].mood}></Suggestions>
             }
           </div>
