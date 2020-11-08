@@ -133,4 +133,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # ignore firebase credentials
-src/firebaseConfig.json
+src/components/firebaseConfig.json
+
+# ignore journey google api credentials
+journey-backend/journey.json
