@@ -28,7 +28,6 @@ function Exercises(props) {
     useEffect(() => {
         if (open) {
             var timer = setInterval(() => {
-                console.log("test");
                 if (stepDuration - 1 === -1) {
                     if (step.current !== steps.length - 1) {
                         step.current = step.current + 1;
