@@ -23,6 +23,8 @@ function Graph(props){
         },
 
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             title: {
                 display: true,
                 text: "Mood this month"
@@ -45,6 +47,9 @@ function Graph(props){
                         display: true,
                         labelString: "Mood"
                     },
+                    ticks: {
+                        display: false
+                    }
                 }]
             }
         }
@@ -64,7 +69,9 @@ function Graph(props){
     })
 
     return (
-        <canvas className="graph" ref={ graphRef }></canvas>
+        <div className="graph">
+            <canvas ref={ graphRef }></canvas>
+        </div>
     )
 }
 

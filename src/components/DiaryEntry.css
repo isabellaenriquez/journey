@@ -1,7 +1,5 @@
 .DiaryEntry {
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
+    border-bottom: 1px solid gray;
     display: inline-block;
     min-height: 20vh;
     position: relative;
