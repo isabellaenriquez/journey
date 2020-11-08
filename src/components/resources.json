@@ -9,23 +9,23 @@
         {
             "name": "Youthspace.ca",
             "description": "Hotline dedicated to Canadian youth. Includes suicide prevention, education, and support. Active from 6pm to 12am PT.",
-            "web": "www.youthspace.ca",
+            "web": "https://www.youthspace.ca",
             "text": "(778)-783-0177."
         },
         {
             "name": "Better Help",
             "description": "Online access to professional counsellors.",
-            "web": "www.betterhelp.ca"
+            "web": "https://www.betterhelp.ca"
         },
         {
             "name": "The Lifeline App",
             "description": "Direct access to phone, online chat, text, and email crisis support, including e-counselling, self-management tools, and access to crisis centres across Canada.",
-            "web": "www.thelifelinecanada.ca"
+            "web": "https://www.thelifelinecanada.ca"
         },
         {
             "name": "Big White Wall Canada",
             "description": "Anonymous peer support community accessible anytime, anywhere.",
-            "web": "www.bigwhitewall.ca"
+            "web": "https://www.bigwhitewall.ca"
         },
         {
             "name": "Canadian Mental Health Association",
