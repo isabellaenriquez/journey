@@ -33,7 +33,6 @@ function App() {
         getAll(db)
         .then((response) => {
             response.reverse();
-            console.log(response);
             setEntries(response);
         })
         .catch((error) => {
