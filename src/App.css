@@ -13,6 +13,11 @@
   overflow-y: scroll;
   padding: 20px;
   margin-top: 20vh;
+  direction: rtl;
+}
+
+.left-side-content {
+  direction: ltr;
 }
 
 .right-side {

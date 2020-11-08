@@ -3,6 +3,7 @@
     border-radius: 50px;
     padding: 50px;
     margin: 20px;
+    box-shadow: 0px 2px 5px 2px #888888;
 }
 
 a{
@@ -29,4 +30,5 @@ table{
     margin:20px;
     background-color: #8a5d8c;
     border-radius: 50px;
+    box-shadow: 0px 2px 5px 2px #888888;
 }

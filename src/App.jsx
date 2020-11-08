@@ -43,11 +43,13 @@ function App() {
     <div className="App">
       <div className="main">
         <div className="left-side">
-          <DiaryPage onNewEntry={updateEntries}></DiaryPage>
-          <Graph entries={entries}></Graph>
-          {(entries.length > 0) &&
-            <Suggestions score={entries[0].mood}></Suggestions>
-          }
+          <div className="left-side-content">
+            <DiaryPage onNewEntry={updateEntries}></DiaryPage>
+            <Graph entries={entries}></Graph>
+            {(entries.length > 0) &&
+              <Suggestions score={entries[0].mood}></Suggestions>
+            }
+          </div>
         </div>
         <div className="right-side">
           {(entries.length > 0) &&
