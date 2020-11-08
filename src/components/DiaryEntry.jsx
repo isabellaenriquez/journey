@@ -2,6 +2,7 @@ import React from 'react';
 import Popup from 'reactjs-popup';
 import {convertToColour} from '../ColourConversion';
 import './DiaryEntry.css';
+import logo from '../images/journey-logo.png';
 
 function DiaryEntry(props){
     let entrySyle = {
@@ -28,6 +29,9 @@ function DiaryEntry(props){
             modal
         >
             <div className="modal" style={{backgroundColor: convertToColour(props.mood)}}>
+            <div className="logo-div">
+                <img className="logo" src={logo}></img>
+                  </div>
                 <div className="header">{props.day + " " + getMonthName(props.month) + " " + props.year}</div>
                 <p className="content">
                     {props.entry}

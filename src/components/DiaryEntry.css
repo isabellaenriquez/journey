@@ -131,3 +131,12 @@
     box-shadow: 0 0 500px rgba(241, 241, 241, 0);
   }
 }
+
+.logo{
+  height: 20vh;
+  margin: 20px;
+}
+
+.logo-div{
+  text-align: center;
+}
