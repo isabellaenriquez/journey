@@ -58,7 +58,6 @@ function Graph(props){
     useEffect(() => {
         if (graphRef.current !== null && prevGraphRef.current !== graphRef.current) {
             graphContent.current = new Chart(graphRef.current, graphConfig);
-            console.log(graphContent.current);
         }
         if (graphContent.current !== null) {
             graphConfig.data.datasets[0].data = props.entries.filter((entry) => entry.month === new Date().getMonth() + 1).map((entry) => ({x: entry.day, y: entry.mood}));
