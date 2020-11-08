@@ -5,7 +5,7 @@
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 10px 0px 10px 0px;
+    padding: 0.5rem 0px 0.5rem 0px;
 }
 
 .date, .entryText, .score, .magnitude{
@@ -22,13 +22,13 @@
 
 .entryText {
     font-size: 0.9rem;
-    width: 22vw;
+    width: 25vw;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis 
 }
 
-.score, .magnitude {
+.score {
     font-size: 0.8rem;
 }
 
