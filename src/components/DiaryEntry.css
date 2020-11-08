@@ -16,23 +16,20 @@
 }
 
 .date {
-    font-size: 20px;
+    font-size: 1.2rem;
     overflow: visible;
 }
 
-
-.score, .magnitude {
-    font-size: 12px;
-}
-
-
-
 .entryText {
-    font-size: 15px;
+    font-size: 0.9rem;
     width: 22vw;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis 
+}
+
+.score, .magnitude {
+    font-size: 0.8rem;
 }
 
 /* width */
