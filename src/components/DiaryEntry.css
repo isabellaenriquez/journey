@@ -54,6 +54,7 @@
   border-radius: 50px;
   font-size: 12px;
   padding: 100px;
+  max-width: 70vw;
 }
 
 .modal > .header {
