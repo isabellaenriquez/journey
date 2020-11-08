@@ -9,8 +9,6 @@ function DiaryPage(props){
     const date = useRef("");
 
     function addEntry(event) {
-        console.log(entry.current.value);
-
         const dateObj = new Date(date.current.value);
 
         const db = firebase.firestore();
