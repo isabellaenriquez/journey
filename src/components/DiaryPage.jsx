@@ -44,7 +44,7 @@ function DiaryPage(props){
         <div className="DiaryPage">
             <header className="title">How you feeling?</header>
             <input type="date" ref={date}></input>
-            <textarea className="entry" ref={entry} placeholder="Placeholder" />
+            <textarea className="entry-box" ref={entry} placeholder="Placeholder" />
             <button className="addButton" onClick={addEntry}>Add Entry</button>
         </div>
     );

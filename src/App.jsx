@@ -32,19 +32,19 @@ function App() {
   }, [db])
 
   return (
-    <div className="App">
-      <DiaryPage onNewEntry={addEntry}></DiaryPage>
-      <Graph entries={entries}></Graph>
-      { (entries.length > 0) &&
-        <>
-          <div>
-            {
-              entries.map((entry) => (<DiaryEntry key={entry.day + "/" + (entry.month+1) + "/" + entry.year} day={entry.day} month={entry.month} year={entry.year} entry={entry.entry} mood={entry.mood} magnitude={entry.magnitude}></DiaryEntry>))
-            }
-          </div>
+    <div className="main">
+      <div className="left-side">
+        <DiaryPage onNewEntry={addEntry}></DiaryPage>
+        <Graph entries={entries}></Graph>
+        { (entries.length > 0) &&
           <Suggestions score={entries[0].mood}></Suggestions>
-        </>
-      }
+        }
+      </div>
+      <div className="right-side">
+        { (entries.length > 0) &&
+          entries.map((entry) => (<DiaryEntry key={entry.day + "/" + (entry.month+1) + "/" + entry.year} day={entry.day} month={entry.month} year={entry.year} entry={entry.entry} mood={entry.mood} magnitude={entry.magnitude}></DiaryEntry>))
+        }
+      </div>
     </div>
   );
 }
