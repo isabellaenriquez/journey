@@ -47,4 +47,10 @@
     color: white;
     padding: 0.5em;
     font-family: 'Cabin';
+    transition: 0.5s;
+}
+
+.addButton:hover{
+    background-color: white;
+    color: #8a5d8c;
 }
