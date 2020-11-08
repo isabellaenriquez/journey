@@ -1,9 +1,11 @@
 .DiaryEntry {
     border-bottom: 1px solid gray;
     display: inline-block;
-    min-height: 20vh;
+    min-height: 15vh;
     position: relative;
     overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 0px 10px 0px;
 }
 
 .date, .entryText, .score, .magnitude{
@@ -11,19 +13,26 @@
     padding-left: 20px;
     margin: 2px 0px 2px 0px;
     padding-bottom: 0px;
-    font-size: 2vh;
 }
+
+.date {
+    font-size: 20px;
+    overflow: visible;
+}
+
 
 .score, .magnitude {
     font-size: 12px;
 }
 
-.date {
-    font-size: 35px;
-}
+
 
 .entryText {
     font-size: 15px;
+    width: 22vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis 
 }
 
 /* width */
