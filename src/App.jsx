@@ -12,6 +12,7 @@ function App() {
   function updateEntries() {
     getAll(db)
     .then((response) => {
+      response.reverse();
       console.log(response);
       setEntries(response);
     })
@@ -29,6 +30,7 @@ function App() {
   useEffect(() => {
     getAll(db)
     .then((response) => {
+      response.reverse()
       console.log(response);
       setEntries(response);
     })
