@@ -36,7 +36,7 @@
 .addButton {
     margin-top: 10px;
     margin-left: 20px;
-    width: 15%;
+    margin-right: 20px;
     border-radius: 10px;
     border-width: 1px;
     background-color: #8a5d8c;
