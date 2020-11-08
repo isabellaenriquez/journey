@@ -5,6 +5,6 @@ exports.convertToColour = function (score) {
     else if (score >= 0.1) return "#f5f578";
     else if (score >= -0.1) return "#ffcc72";
     else if (score >= -0.4) return "#ffa172";
-    else if (score <= -0.6) return "#e88672";
+    else if (score < -0.4) return "#e88672";
 }
 
