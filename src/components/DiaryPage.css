@@ -10,8 +10,10 @@
     text-align: left;
 }
 
-.date {
+.date-picker {
     margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
     color: black;
     font-size: 15px;
     text-align: left;
@@ -19,14 +21,15 @@
 
 .entry-box {
     margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
     float: left;
     resize: none;
-    width: 80%;
     height: 150px;
 }
 
 .addButton {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 20px;
     width: 15%;
 }
