@@ -17,6 +17,9 @@
     color: black;
     font-size: 15px;
     text-align: left;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 0.5em;
 }
 
 .entry-box {
@@ -27,10 +30,16 @@
     float: left;
     resize: none;
     height: 150px;
+    border-radius: 10px;
 }
 
 .addButton {
     margin-top: 10px;
     margin-left: 20px;
     width: 15%;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: #8a5d8c;
+    color: white;
+    padding: 0.5em;
 }
