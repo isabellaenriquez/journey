@@ -63,7 +63,7 @@ function App() {
           </div>
         </div>
         <div className="right-side">
-          {(entries.length > 0) &&
+          { (entries.length > 0) &&
             entries.map((entry) => (<DiaryEntry key={entry.day + "/" + (entry.month + 1) + "/" + entry.year} day={entry.day} month={entry.month} year={entry.year} entry={entry.entry} mood={entry.mood} magnitude={entry.magnitude}></DiaryEntry>))
           }
         </div>
