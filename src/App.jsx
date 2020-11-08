@@ -5,7 +5,7 @@ import Graph from './components/Graph';
 import DiaryPage from './components/DiaryPage';
 import DiaryEntry from './components/DiaryEntry';
 import Suggestions from './components/Suggestions';
-import Exercises from './components/Exercises';
+import Exercises from './components/Exercises.jsx';
 
 function App() {
   const [entries, setEntries] = useState([]);
