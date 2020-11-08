@@ -11,47 +11,53 @@ function App() {
 
   function updateEntries() {
     getAll(db)
-    .then((response) => {
-      console.log(response);
-      setEntries(response);
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+      .then((response) => {
+        console.log(response);
+        setEntries(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
   const db = firebase.firestore();
 
   db.settings({
-      timestampInSnapshots: true
+    timestampInSnapshots: true
   });
 
   useEffect(() => {
     getAll(db)
-    .then((response) => {
-      console.log(response);
-      setEntries(response);
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+      .then((response) => {
+        console.log(response);
+        setEntries(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }, [db])
 
   return (
-    <div className="main">
-      <div className="left-side">
-        <DiaryPage onNewEntry={updateEntries}></DiaryPage>
-        <Graph entries={entries}></Graph>
-        { (entries.length > 0) &&
-          <Suggestions score={entries[0].mood}></Suggestions>
-        }
+    <div>
+      <div className="banner">
+        J o u r n e y
       </div>
-      <div className="right-side">
-        { (entries.length > 0) &&
-          entries.map((entry) => (<DiaryEntry key={entry.day + "/" + (entry.month+1) + "/" + entry.year} day={entry.day} month={entry.month} year={entry.year} entry={entry.entry} mood={entry.mood} magnitude={entry.magnitude}></DiaryEntry>))
-        }
+      <div className="main">
+        <div className="left-side">
+          <DiaryPage onNewEntry={updateEntries}></DiaryPage>
+          <Graph entries={entries}></Graph>
+          {(entries.length > 0) &&
+            <Suggestions score={entries[0].mood}></Suggestions>
+          }
+        </div>
+        <div className="right-side">
+          {(entries.length > 0) &&
+            entries.map((entry) => (<DiaryEntry key={entry.day + "/" + (entry.month + 1) + "/" + entry.year} day={entry.day} month={entry.month} year={entry.year} entry={entry.entry} mood={entry.mood} magnitude={entry.magnitude}></DiaryEntry>))
+          }
+        </div>
       </div>
     </div>
+
   );
 }
 
