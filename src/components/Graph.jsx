@@ -27,7 +27,7 @@ function Graph(props){
             maintainAspectRatio: false,
             title: {
                 display: true,
-                text: "Mood this month"
+                text: "Mood This Month"
             },
             legend: {
                 display: false
