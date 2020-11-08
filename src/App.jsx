@@ -40,7 +40,7 @@ function App() {
   }, [db])
 
   return (
-    <div>
+    <div className="App">
       <div className="banner">
         J o u r n e y
       </div>
