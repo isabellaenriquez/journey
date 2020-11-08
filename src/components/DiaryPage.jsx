@@ -34,6 +34,7 @@ function DiaryPage(props){
             };
             const userRef = db.collection("users").doc(date.current.value).set(data);
             props.onNewEntry();
+            document.getElementById("suggestions").scrollIntoView({behavior: "smooth"});
         })
         .catch((error) => {
             console.log(error);

@@ -74,7 +74,7 @@ function Suggestions(props) {
 
 
     return (
-        <div className="Suggestions">
+        <div className="Suggestions" id="suggestions">
             <div className="Tip">
                 <table>
                     <tr>
