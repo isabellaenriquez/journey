@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+
 .DiaryPage {
     display: flex;
     flex-direction: column;
@@ -20,6 +22,7 @@
     border-radius: 10px;
     border-width: 1px;
     padding: 0.5em;
+    font-family: 'Cabin';
 }
 
 .entry-box {
@@ -31,6 +34,7 @@
     resize: none;
     height: 150px;
     border-radius: 10px;
+    font-family: 'Cabin';
 }
 
 .addButton {
@@ -42,4 +46,5 @@
     background-color: #8a5d8c;
     color: white;
     padding: 0.5em;
+    font-family: 'Cabin';
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+
 .DiaryEntry {
     border-bottom: 1px solid gray;
     display: inline-block;
@@ -7,6 +9,7 @@
     text-overflow: ellipsis;
     cursor: pointer;
     padding: 0.5rem 0px 0.5rem 0px;
+    font-family: 'Cabin';
 }
 
 .date, .entryText, .score, .magnitude{

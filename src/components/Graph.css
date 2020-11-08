@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin");
 .graph {
     position: relative;
     height: 50vh;
     padding: 0px 100px 0px 100px;
     margin: 50px;
+    font-family: 'Cabin';
 }
