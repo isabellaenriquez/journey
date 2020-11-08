@@ -18,7 +18,7 @@ function DiaryEntry(props){
         <div className="DiaryEntry" style = {entrySyle}>  
             <h3 className="date">{props.day + " " + getMonthName(props.month) + " " + props.year}</h3>
             <p className="entryText">{props.entry}</p>
-            <h3 className="score">Mood: {props.mood}</h3>
+            <h3 className="score">Mood: {props.mood.toFixed(2)}</h3>
         </div>
     );
 }
