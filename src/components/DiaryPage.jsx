@@ -23,7 +23,6 @@ function DiaryPage(props){
             text: entry.current.value
         })
         .then((response) => {
-            console.log(response.data);
             const data = {
                 day: dateObj.getDate() + 1,
                 month: dateObj.getMonth() + 1,
