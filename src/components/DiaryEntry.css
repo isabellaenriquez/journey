@@ -8,12 +8,16 @@
     overflow: hidden;
 }
 
-h1, h2, h3, p {
+.date, .entryText, .score, .magnitude{
     text-align: left;
     padding-left: 20px;
     margin: 2px 0px 2px 0px;
     padding-bottom: 0px;
     font-size: 2vh;
+}
+
+.score, .magnitude {
+    font-size: 12px;
 }
 
 .date {
