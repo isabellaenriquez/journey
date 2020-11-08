@@ -1,7 +1,7 @@
 .DiaryEntry {
     border-bottom: 1px solid gray;
     display: inline-block;
-    min-height: 10vh;
+    min-height: 13vh;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -31,6 +31,10 @@
 
 .score {
     font-size: 0.8rem;
+}
+
+.mood-slider, .popup-mood-slider {
+  background: purple;
 }
 
 /* width */
