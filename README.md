@@ -1,6 +1,8 @@
 # Journey
 A mental health and wellness diary.
 
+<img width="30%" src="https://github.com/mkevinq/journey/blob/main/src/images/journey-logo.png">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
