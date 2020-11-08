@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Suggestions.css';
 import { tips } from './tips.json';
 import { resources, crisis } from './resources.json';
+import lightbulb from '../images/lightbulb-man.png'
 
 function Suggestions(props) {
 
@@ -81,7 +82,7 @@ function Suggestions(props) {
                         <td>
                 <h1>Tip</h1>
                             <p>{pickTip()}</p></td>
-                        <td><img src="https://cdn1.iconfinder.com/data/icons/light-bulb-emoticons/512/Happy-Emoji-Emotion-Face-Expression-Feeling_1-512.png" alt=""></img>
+                        <td><img src={lightbulb} alt=""></img>
                         </td>
                     </tr>
                 </table>
