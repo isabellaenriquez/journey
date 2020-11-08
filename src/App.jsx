@@ -9,9 +9,15 @@ import Suggestions from './components/Suggestions';
 function App() {
   const [entries, setEntries] = useState([]);
 
-  function addEntry(entry) {
-    setEntries(oldEntries => [entry, ...oldEntries]);
-    console.log(entries);
+  function updateEntries() {
+    getAll(db)
+    .then((response) => {
+      console.log(response);
+      setEntries(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    })
   }
 
   const db = firebase.firestore();
@@ -34,7 +40,7 @@ function App() {
   return (
     <div className="main">
       <div className="left-side">
-        <DiaryPage onNewEntry={addEntry}></DiaryPage>
+        <DiaryPage onNewEntry={updateEntries}></DiaryPage>
         <Graph entries={entries}></Graph>
         { (entries.length > 0) &&
           <Suggestions score={entries[0].mood}></Suggestions>

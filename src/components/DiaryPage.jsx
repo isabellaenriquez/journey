@@ -33,7 +33,7 @@ function DiaryPage(props){
                 mood: response.data.documentSentiment.score
             };
             const userRef = db.collection("users").doc(date.current.value).set(data);
-            props.onNewEntry(data);
+            props.onNewEntry();
         })
         .catch((error) => {
             console.log(error);
