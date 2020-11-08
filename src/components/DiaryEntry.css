@@ -1,7 +1,7 @@
 .DiaryEntry {
     border-bottom: 1px solid gray;
     display: inline-block;
-    min-height: 15vh;
+    min-height: 10vh;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
