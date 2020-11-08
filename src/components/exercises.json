@@ -1,0 +1,77 @@
+{
+    "exercises": [
+        [
+            {"step": "hold breath", "duration": 20},
+            {"step": "breathe out", "duration": 2},
+            {"step": "hold breath again", "duration": 20},
+            {"step": "breathe out", "duration": 2}
+        ],
+        [
+            {"step": "breathe in through your nose", "duration": 4},
+            {"step": "hold the breath", "duration": 8},
+            {"step": "exhale through your mouth", "duration": 6}
+        ],
+        [
+            {"step": "acknowledge five things that you can see around you", "duration": 10},
+            {"step": "acknowledge four things that you can touch around you", "duration": 9},
+            {"step": "acknowledge three things that you hear", "duration": 9},
+            {"step": "acknowledge two things that you can smell", "duration": 7},
+            {"step": "acknowledge one thing that you can taste", "duration": 5}
+        ],    
+        [
+            {"step": "place your hand under your belly", "duration": 5},
+            {"step": "breathe in", "duration": 4},
+            {"step": "breathe out", "duration": 3},
+            {"step": "pause", "duration": 3},
+            {"step": "continue repeating those steps", "duration": 60}
+        ],
+        [
+            {"step": "relax your facial muscles", "duration": 10},
+            {"step": "let your shoulders drop", "duration": 10},
+            {"step": "let your arms fall to your side", "duration": 10},
+            {"step": "allow your hands to loosen", "duration": 10},
+            {"step": "relax your legs, and allow them to fall apart", "duration": 10},
+            {"step": "allow your feet to relax", "duration": 10},
+            {"step": "breathe in slowly, and breath out slowly", "duration": 60}
+        ] ,       
+        [
+            {"step": "sit up straight", "duration": 5},
+            {"step": "roll your shoulders in a counter-clockwise direction", "duration": 6},
+            {"step": "roll your shoulders in a clockwise direction", "duration": 6},
+            {"step": "reach up as high as you can", "duration": 5},
+            {"step": "relax your arms and let them slowly fall back down", "duration": 7}
+        ],
+        [
+            {"step": "breathe slowly and in a natural way", "duration": 60},
+            {"step": "take a deep breath and tense your toes and feet", "duration": 8},
+            {"step": "slowly exhale, and relax your toes and feet", "duration": 5},
+            {"step": "take a deep breath and tighten your lower leg muscles", "duration": 8},
+            {"step": "slowly exhale, and relax your lower leg muscles", "duration": 5},
+            {"step": "take a deep breath and tighten your upper leg muscles", "duration": 8},
+            {"step": "slowly exhale, and relax your upper leg muscles", "duration": 5},
+            {"step": "take a deep breath and tighten your lower back muscles", "duration": 8},
+            {"step": "slowly exhale, and relax your lower back muscles", "duration": 5},
+            {"step": "take a deep breath and tighten your upper back muscles", "duration": 8},
+            {"step": "slowly exhale, and relax your upper back muscles", "duration": 5},
+            {"step": "take a deep breath and tighten your arms", "duration": 8},
+            {"step": "slowly exhale, and relax your arms", "duration": 5},
+            {"step": "take a deep breath and tighten your hands", "duration": 8},
+            {"step": "slowly exhale, and relax your hands", "duration": 5},
+            {"step": "take a deep breath and tighten your shoulders", "duration": 8},
+            {"step": "slowly exhale, and relax your shoulders", "duration": 5},
+            {"step": "take a deep breath and tighten your face", "duration": 8},
+            {"step": "slowly exhale, and relax your whole body", "duration": 10}
+        ],    
+        [
+            {"step": "look around you and find an object to focus on", "duration": 8},
+            {"step": "recall what the object looks like", "duration": 5},
+            {"step": "recall how the object makes you feel", "duration": 5},
+            {"step": "recall a small detail of the object", "duration": 5}
+        ],
+        [
+            {"step": "think of three good things that happened today", "duration": 8},
+            {"step": "think of three things you are grateful for", "duration": 8},
+            {"step": "think of three good things you want to do for others", "duration": 8}
+        ]
+    ]
+}

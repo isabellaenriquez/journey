@@ -5,9 +5,11 @@ import Graph from './components/Graph';
 import DiaryPage from './components/DiaryPage';
 import DiaryEntry from './components/DiaryEntry';
 import Suggestions from './components/Suggestions';
+import Exercises from './components/Exercises';
 
 function App() {
   const [entries, setEntries] = useState([]);
+  const [exercisesActive, setExercisesActive] = useState(false);
 
   function updateEntries() {
     getAll(db)
@@ -15,6 +17,7 @@ function App() {
         response.reverse();
         console.log(response);
         setEntries(response);
+        setExercisesActive(true);
       })
       .catch((error) => {
         console.log(error);
@@ -39,9 +42,17 @@ function App() {
       })
   }, [db])
 
+  function onExerciseFinish() {
+    setExercisesActive(false);
+    document.getElementById("suggestions").scrollIntoView({behavior: "smooth"});
+  }
+
   return (
     <div className="App">
       <div className="main">
+        { (entries.length > 0) &&
+          <Exercises open={exercisesActive} onClose={onExerciseFinish}></Exercises>
+        }
         <div className="left-side">
           <div className="left-side-content">
             <DiaryPage onNewEntry={updateEntries}></DiaryPage>
