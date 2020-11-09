@@ -1,75 +1,24 @@
 # Journey
-A mental health and wellness diary.
-
 <img width="30%" src="https://github.com/mkevinq/journey/blob/main/src/images/journey-logo.png">
 
-# Getting Started with Create React App
+## About
+Journey is a web application built with React, Express.js, and Firebase, utilizing the Google Natural Language API. Designed and developed by <a href="https://github.com/trumanbe01">Truman Be</a>, <a href="https://github.com/isabellaenriquez">Isabella Enriquez</a>, <a href="https://github.com/jessicaa-li">Jessica Li</a>, and <a href="https://github.com/mkevinq">Marc Kevin Quijalvo</a> at Queen's Women in Computing's 24hr hackathon, hackHer. Awarded "Most Innovative Project" for being the "best project that demonstrates uniqueness, a creative use of technologies, and creates an innovative solution towards the case statement."
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mission Statement
+Journey, at its core, is a web journal. It was designed with the vision of combating rising mental health concerns in the age of the COVID-19 pandemic.
 
-## Available Scripts
+In a survey done by the Angus Reid Institute in April 2020, approximately 50% of Canadians reported a worsening of their mental health, with about 10% saying it has worsened ‘a lot.' With the increased fear of unemployment and/or illness, uncertainty, and social isolation brought by the pandemic, it is no wonder that these statistics are so high.
 
-In the project directory, you can run:
+At a 24hr hackathon, hackHer, hosted by Queen's Women in Computing, our team set out to develop a tool to help people with their mental health, which is too often overlooked. Journaling is a common and healthy way of expressing one's emotions, and is a great tool for managing one's mental health. Our team wanted to improve this experience.
 
-### `npm start`
+So we created Journey. With Journey, users can write daily journal entries, writing about their day, how they are feeling, and any other thoughts. After saving an entry, users receive breathing and/or visualization exercises we researched to be useful when people are overwhelmed, anxious, or in crisis. They are also redirected to our tips and resources section, with the former changing for each save, and the latter being a list of mental health resources (such as access to online counsellors, 24/7 hotlines, etc.) which are tailored according to the user's most recent entry. Once the user has completed their exercise, they can see that their entry has been successfully saved, and are able to view the entry's (and any past entries') content and mood evaluation. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Mood evaluation occurs once an entry is saved, using natural language analysis to assess the overall sentiment of the entry, giving it a score from -9 (for most negative) to 9 (for most positive). Entries are coloured accordingly, and each mood assessment is placed on a chart (showing the mood assessments for the month), allowing the users to visualize their moods over periods of time. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Journey was not designed to be an alternative to seeking real, professional help, but rather to help users more easily identify trends in their emotions. Users may not take what they're feeling as seriously as they should, but we believe that the perspective provided by Journey can help users see any red flags in their behaviour, and push them towards making a decision about their well-being.  
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies
+- React
+- Express.js
+- Firebase
+- Google Natural Language API
