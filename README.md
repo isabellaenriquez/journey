@@ -2,7 +2,7 @@
 <img width="30%" src="https://github.com/mkevinq/journey/blob/main/src/images/journey-logo.png">
 
 ## About
-Journey is a web application built with React, Express.js, and Firebase, utilizing the Google Natural Language API. Designed and developed by <a href="https://github.com/trumanbe01">Truman Be</a>, <a href="https://github.com/isabellaenriquez">Isabella Enriquez</a>, <a href="https://github.com/jessicaa-li">Jessica Li</a>, and <a href="https://github.com/mkevinq">Marc Kevin Quijalvo</a> at Queen's Women in Computing's 24hr hackathon, hackHer. Awarded "Most Innovative Project" for being the "best project that demonstrates uniqueness, a creative use of technologies, and creates an innovative solution towards the case statement."
+Journey is a mental health and wellness web application built with React, Express.js, and Firebase, utilizing the Google Natural Language API. Designed and developed by <a href="https://github.com/trumanbe01">Truman Be</a>, <a href="https://github.com/isabellaenriquez">Isabella Enriquez</a>, <a href="https://github.com/jessicaa-li">Jessica Li</a>, and <a href="https://github.com/mkevinq">Marc Kevin Quijalvo</a> at Queen's Women in Computing's 24hr hackathon, hackHer. Awarded "Most Innovative Project" for being the "best project that demonstrates uniqueness, a creative use of technologies, and creates an innovative solution towards the case statement."
 
 ## Mission Statement
 Journey, at its core, is a web journal. It was designed with the vision of combating rising mental health concerns in the age of the COVID-19 pandemic.
